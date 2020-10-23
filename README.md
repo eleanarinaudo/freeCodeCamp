@@ -1,6 +1,6 @@
 # FreeCodeCamp
 --------
-## Web Desgin Projects
+## Web Design Projects
 
  - Tribute Page
  - Survey Form
