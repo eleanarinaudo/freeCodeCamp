@@ -1,0 +1,231 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem; 
+    font-weight: 400; 
+    line-height: 1.4; 
+    color: white; 
+}
+
+html {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+@media (min-width: 831px)
+body {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+}
+
+
+/***NAV BAR****/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:pink;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.nav-list a {
+    display: block;
+    font-size:20px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/***WELCOME SECTION***/
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+}
+
+.description{
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+    color: pink;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+    font-size: 50px;
+    margin-block-start: 0.83em;
+}
+
+@media (max-width: 767px), (max-height: 440px)
+body {
+    min-width: 320px;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+/**PROJECTS**/
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567d;
+}
+
+.title-projects{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: gray;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+.projects-img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.button{
+    font-size: 2rem;
+    background: gray;
+    transition: background 0.3s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.btn > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.btn:hover {
+    background: red;
+}
+
+
+.project-title{
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: #303841;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.profile-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: gray;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+i{
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 900;
+}
